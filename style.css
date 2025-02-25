@@ -261,7 +261,9 @@ main .banner-form .banner-form-button:hover{
 /* Mobile */
 @media screen and (max-width: 480px) {
     main .banner{
+        width: 350;
         height: 450px;
+        margin:0;
     }
     main .banner-content .banner-title{
         font-size: 4rem;
@@ -274,6 +276,38 @@ main .banner-form .banner-form-button:hover{
         margin-top: 1.5rem;
         padding: 0.5rem;
         font-size: 1.5rem;
+    }
+    #main-container{
+        margin: 0;
+        width: 350px;
+    }
+    #main-container #services .services-header{
+        width: 350px;
+    }
+    #services{
+        width: 350px;
+        margin: 0;
+    }
+    .services-content{
+        width: 350px;
+        grid-template-columns: 350px;
+    }
+    .services-content .service-card{
+        width: 350px;
+        height: 100%;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 0.3rem;
+    }
+    .services-content img{
+        width:100%;
+        margin: 0;
+    }
+    .services-content .service-card p{
+        font-family: var(--main-font);
+        font-size: 0.8rem;
+        text-align: center;
+        margin:0;
     }
 }
 /* Tablet */
