@@ -172,7 +172,15 @@ main .banner-form .banner-form-button:hover{
 /* responsive */
 /* Mobile */
 @media screen and (max-width: 480px) {
-    
+    main .banner-content .banner-title{
+        font-size: 3rem;
+    }
+    main .banner-content p{
+        color: white;
+    }
+    main .banner-content .banner-button{
+        padding:1rem;
+    }
 }
 /* Tablet */
 @media screen and (max-width: 768px) {
