@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #255BEC;
+    --main-font: "JetBrains Mono", serif;
+}
+/* Header styling */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5rem;
+    flex-wrap: wrap;
+}
+header #logo{
+    font-family: "Megrim", serif;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: normal; 
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+header nav ul li:nth-of-type(even){
+    margin: 0 2rem;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #4d4b4b;
+    font-family: "JetBrains Mono", serif;
+    font-weight: bold;
+}
+header nav ul li a.active{
+    color: #000000;
+}
+header nav ul li a:hover{
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    scale: 1.1;
+}
+/* end of Header styling */
+
+
+/* main */
+
+main .banner{
+    margin: 0 auto;
+    width: 90%;
+    height: 650px;
+    border-image: fill 1 linear-gradient(#ffffff88, #02020288);
+    border-radius: 20px;
+    padding: 1rem;
+    background-image: url(assets/img/home-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main .banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .banner-content .banner-title{
+    font-size: 6rem;
+    font-family: "Nunito Sans", serif;
+    text-align: center;
+}
+main .banner-content p{
+    font-size: 1rem;
+    font-family: "JetBrains Mono", serif;
+    text-align: center;
+}
+main .banner-content .banner-button{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+main .banner-content .banner-button:hover{
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+}
+main .banner-content .banner-form{
+    position: relative;
+}
+main .banner-form form{
+    position: absolute;
+    right: 200px;
+    bottom: 250px;
+    width: 330px;
+    height: 300px;
+    padding: 1.3rem;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    font-family: var(--main-font);
+}
+
+main .banner-form .form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+main .banner-form .form-header button{
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: var(--main-font);
+}
+main .banner-form .form-header p:nth-of-type(2){
+    border-left: 2px solid black;
+    padding-left: 1rem;
+}
+main .banner-form .form-content input{
+    width: 100%;
+    height: 30px;
+    margin-top: 0.4rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    padding-left: 0.3rem;
+}
+main .banner-form .form-content input#pick-time{
+    width: 150px;
+    /* margin-left: 1.3rem; */
+}
+main .banner-form .form-content .pick-time-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(11, 11, 11);
+}
+main .banner-form .form-content .pick-time-label label{
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+main .banner-form .banner-form-button{
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+main .banner-form .banner-form-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+/* end of main */
+
+
+/* responsive */
+/* Mobile */
+@media screen and (max-width: 480px) {
+    
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        margin-bottom: 0.5rem;
+    }
+    header nav ul li{
+        margin: 0;
+    }
+    .profile-box{
+        display: none;
+    }
+    main .banner{
+        height: 500px; 
+    }
+    form{
+            display: none !important;
+        }
+}
+/* Desktop */
+
+
+/* notes 
+
+# Mobile
+only screen and (min-width: 480px)
+
+# Tablet
+only screen and (min-width: 768px) 
+
+# Desktop
+only screen and (min-width: 992px)
+
+# Huge
+only screen and (min-width: 1280px) 
+Or:
+
+# Phone
+only screen and (max-width:320px)
+
+# Tablet
+only screen and (min-width:321px) and (max-width:768px)
+
+# Desktop
+only screen and (min-width:769px)
+
+*/
