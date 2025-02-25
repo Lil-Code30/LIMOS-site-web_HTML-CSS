@@ -3,7 +3,7 @@ Limos est une plateforme de réservation de transport conçue avec HTML et CSS. 
 
 ## 📺 Résultat
 <div align="center">
-  <img src="Output.png" alt="Aperçu du projet" width="80%">
+  <img src="outputs/demo.png" alt="Aperçu du projet" width="80%">
   <p><em> Aperçu du projet</em></p>
 </div>
 
