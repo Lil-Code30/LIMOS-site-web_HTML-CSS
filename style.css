@@ -98,9 +98,9 @@ main .banner-content .banner-button:hover{
     transition: all 0.2s ease-in-out;
     scale: 1.1;
 }
-main .banner-content .banner-form{
+/* main .banner-content .banner-form{
     
-}
+} */
 main .banner-form form{
     position: absolute;
     right: 200px;
