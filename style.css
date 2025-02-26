@@ -346,6 +346,50 @@ main .banner-form .banner-form-button:hover{
     font-family: var(--secondary-font);
     margin-left: 0.1rem;
 }
+/* end of our fleet */
+
+/* why-choose-us */
+#why-choose-us .why-choose-us-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+.why-choose-us-item{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--secondary-font);
+    margin: 0.5rem;
+}
+#why-choose-us .why-choose-us-item-icon-box.odd{
+    background-color: var(--primary-color);
+}
+#why-choose-us .why-choose-us-item-icon-box.even{
+    background-color: rgba(0, 0, 0, 0.866);
+} 
+#why-choose-us .why-choose-us-item-icon-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+}
+#why-choose-us .why-choose-us-item-icon-box img{
+    width: 90px;
+}
+.why-choose-us-item-content h3{
+    margin-top: 5px;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 /* responsive */
 /* Mobile */
 @media screen and (max-width: 480px) {
@@ -446,6 +490,9 @@ main .banner-form .banner-form-button:hover{
     }
     .services-content .service-card{
         margin: 1rem 0;
+    }
+    #why-choose-us .why-choose-us-container{
+        flex-direction: column;
     }
    
 }
