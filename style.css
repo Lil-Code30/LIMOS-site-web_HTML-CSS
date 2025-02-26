@@ -390,6 +390,130 @@ main .banner-form .banner-form-button:hover{
     font-weight: bold;
     font-size: 1.5rem;
 }
+/* end of why-choose-us */
+/* casdillac-escalade styliong container*/
+#casdillac-escalade{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+.casdillac-escalade-header h3{
+    font-size: 2.5rem;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    text-align: center;
+}
+.casdillac-escalade-header p{
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: var(--main-font);
+}
+.casdillac-escalade-content{
+    background-color: rgba(195, 195, 195, 0.501);
+    position: relative;
+    top: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 50vw;
+    margin: 1rem 0;
+    height: auto;
+}
+.casdillac-escalade-content h3{
+    font-size: 1.8rem;
+    font-family: var(--main-font);
+    font-weight: 400;
+    margin: 0.3rem 0;
+}
+.casdillac-escalade-content .casdillac-escalade-content-lists{
+    display: flex;
+    width: 100%;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+.casdillac-escalade-content .casdillac-escalade-content-lists ul{
+    margin-left: 1rem;
+    font-family: var(--main-font); 
+}
+/* .casdillac-escalade-content .casdillac-escalade-content-lists ul li::marker{
+    content: "🚩";
+} */
+.casdillac-escalade-content button{
+    background-color: black;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+.casdillac-escalade-content img{
+    width: 400px;
+    position: absolute;
+    right: 1rem;
+    top: -2rem;
+}
+/* end of casdillac-escalade */
+
+/* footer styling */
+footer{
+    margin-top: 3rem;
+    background-color: rgba(0, 0, 0, 0.866);
+    color: rgb(217, 217, 216);;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(192, 192, 190);
+}
+footer #top-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+footer #top-footer .logo{
+    font-family: "Megrim", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: normal; 
+    color: white;
+}
+footer #top-footer p{
+    font-family: var(--main-font);
+    font-size: small;
+}
+footer #top-footer input{
+    padding: 0.3rem 0.2rem;
+    margin-top: 0.3rem;
+    outline: none;
+    border: none;
+    background-color: #4d4b4b;
+    color: white;
+}
+footer #top-footer button{
+    padding: 0.3rem 0.2rem;  
+}
+footer #top-footer .footer-headings h3{
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: white;
+}
+footer #top-footer .footer-headings ul{
+    list-style: none;
+}
+footer #bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 /* responsive */
 /* Mobile */
 @media screen and (max-width: 480px) {
@@ -449,12 +573,20 @@ main .banner-form .banner-form-button:hover{
         max-width: 390px;
         margin: 0.1rem;
     }
+    .casdillac-escalade-content{
+        width: 100%;
+        height: auto;
+    }
+    .casdillac-escalade-content .casdillac-escalade-content-lists{
+        flex-direction: column;
+    }
 }
 /* Tablet */
 @media screen and (max-width: 885px){
     .banner-form{
         display: none !important;
     }
+    
 }
 @media screen and (max-width: 768px) {
     header {
@@ -494,9 +626,29 @@ main .banner-form .banner-form-button:hover{
     #why-choose-us .why-choose-us-container{
         flex-direction: column;
     }
+    .casdillac-escalade-content img{
+        display: none;
+    }
+    footer #top-footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer #bottom-footer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
    
 }
 /* Desktop */
+@media screen and (min-width: 992px){
+    .social-media-icon{
+        width: 35px;
+        height: 35px;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .services-content{
         grid-template-columns: 500px;
@@ -504,8 +656,19 @@ main .banner-form .banner-form-button:hover{
         gap: 0.5rem;
         place-content: center;
     }
+    
+}
+@media screen and (min-width: 1050px){
+    .casdillac-escalade-content{
+        width: 90vw;
+    }    
 }
 
+@media screen and (max-width: 1794px){
+    .casdillac-escalade-content img{
+        display: none;
+    }
+}
 
 /* notes 
 
