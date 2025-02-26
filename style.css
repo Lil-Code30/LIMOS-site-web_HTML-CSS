@@ -10,10 +10,27 @@
     --secondary-font: "Nunito Sans", serif;
 }
 .second-headings{
-    font-family: "Nunito Sans", serif;
+    font-family: var(--secondary-font);
     font-weight: bold;
     font-size: 3rem;
 }
+.second-headings-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.second-paragraphs{
+    font-size: 1rem;
+    font-family: var(--main-font);
+    color: rgb(24, 23, 23);
+    font-weight: 500;
+}
+.our-fleet-item-img{
+    width: 100%;
+    height: 100%;
+}
+/* end of Global styling */
 /* Header styling */
 header{
     display: flex;
@@ -54,7 +71,7 @@ header nav ul li a:hover{
 /* end of Header styling */
 
 
-/* main */
+/* banner styling */
 
 main .banner{
     position: relative;
@@ -175,7 +192,7 @@ main .banner-form .banner-form-button:hover{
     background-color: white;
     color: black;
 }
-/* end of main */
+/* end of banner */
 /* MAIN CONTAINER styling */
 
 #main-container{
@@ -188,18 +205,7 @@ main .banner-form .banner-form-button:hover{
 }
 
 /* services */
-#main-container #services .services-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-#main-container #services .services-header p{
-    font-size: 1rem;
-    font-family: var(--main-font);
-    color: rgb(24, 23, 23);
-    font-weight: 500;
-}
+
 .services-content{
     width: 100%;
     display: grid;
@@ -256,12 +262,95 @@ main .banner-form .banner-form-button:hover{
     margin: 0.3rem;
     box-sizing: border-box;
 }
-
+/* end of services */
+/* our fleet */
+.our-fleet-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-fleet-navbar ul{
+    margin: 1rem 0;
+    margin-top: 1.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our-fleet-navbar ul li{
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    font-family: var(--secondary-font); 
+}
+.our-fleet-navbar ul li.active{
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+.our-fleet-navbar ul li:nth-of-type(3){
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+#our-fleet .our-fleet-content-container{
+  margin: 1rem;  
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 1.4rem;
+  max-width: 90vw;
+  overflow-x: scroll;
+  padding: 1rem;
+}
+#our-fleet .our-fleet-content-container::-webkit-scrollbar{
+    height: 12px;
+}
+#our-fleet .our-fleet-content-container::-webkit-scrollbar-track{
+    background-color: #00000062;
+    border-radius: 12px;  
+}
+#our-fleet .our-fleet-content-container::-webkit-scrollbar-thumb{
+    background-color: #000000d3;
+    border-radius: 12px;  
+}
+#our-fleet .our-fleet-content-container .our-fleet-img-box{
+    width: 400px;
+    height: 250px;
+    background-color: #a2a0a082;
+    border-radius: 10px;
+}
+#our-fleet .our-fleet-content-container .our-fleet-item-title{
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+}
+#our-fleet .our-fleet-content-container .our-fleet-item-icons-box{
+    display: flex;
+    gap: 0.5rem;
+}
+#our-fleet .our-fleet-content-container .our-fleet-item-icon-box{
+    background-color: #a2a0a082;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+}
+.our-fleet-item-icon-box img{
+    width: 20px;
+    height: 20px;
+}
+.our-fleet-item-icon-box span{
+    font-size: 1rem;
+    vertical-align: middle;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+    margin-left: 0.1rem;
+}
 /* responsive */
 /* Mobile */
 @media screen and (max-width: 480px) {
     main .banner{
-        width: 350;
+        width: 430px;
         height: 450px;
         margin:0;
     }
@@ -309,6 +398,13 @@ main .banner-form .banner-form-button:hover{
         text-align: center;
         margin:0;
     }
+    #our-fleet .our-fleet-content-container .our-fleet-img-box{
+        width: 300px;
+    }
+    #our-fleet .our-fleet-content-container{
+        max-width: 390px;
+        margin: 0.1rem;
+    }
 }
 /* Tablet */
 @media screen and (max-width: 885px){
@@ -341,11 +437,11 @@ main .banner-form .banner-form-button:hover{
     #main-container{
         margin: 2rem 1rem;
     }
-    #main-container #services .services-header{
+    .second-headings-box{
         flex-direction: column;
         gap: 1rem;
     }
-    #main-container #services .services-header p{
+    .second-paragraphs{
         text-align: center;
     }
     .services-content .service-card{
